@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0b1f33;
+  --navy-deep: #071522;
+  --gold: #c8a96b;
+  --warm: #faf8f3;
+  --mist: #eef1f3;
+  --ink: #17212b;
+  --success: #17765a;
+  --warning: #b36b21;
+  --border: rgba(11, 31, 51, 0.1);
+  --header-h: 4.25rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ink);
+  background: var(--warm);
+  font-size: 18px;
+  line-height: 1.75;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(200, 169, 107, 0.35);
+  color: var(--navy-deep);
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-content px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-y {
+    @apply py-12 sm:py-16 lg:py-[4.5rem];
+  }
+
+  .section-y-tight {
+    @apply py-8 sm:py-10 lg:py-12;
+  }
+
+  .prose-site {
+    @apply text-[18px] leading-[1.75] text-ink/90;
+  }
+
+  .prose-site p + p {
+    @apply mt-5;
+  }
+
+  .card-surface {
+    @apply rounded-2xl border border-[var(--border)] bg-white/80 shadow-soft;
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-semibold text-navy;
+  }
+
+  .btn {
+    @apply inline-flex min-h-12 items-center justify-center gap-2.5 rounded-xl px-5 py-3 text-[15px] font-semibold leading-none transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+  }
+
+  .btn-primary {
+    @apply btn bg-navy text-warm hover:bg-navy-deep;
+  }
+
+  .btn-secondary {
+    @apply btn border border-navy/15 bg-white text-navy hover:border-gold/50 hover:bg-warm;
+  }
+
+  .btn-gold {
+    @apply btn bg-gold text-navy-deep hover:brightness-105;
+  }
+
+  .link-inline {
+    @apply font-semibold text-navy underline decoration-gold/60 underline-offset-4 transition hover:text-navy-deep hover:decoration-gold;
+  }
+
+  .heading-display {
+    @apply font-display text-3xl font-bold leading-tight tracking-tight text-navy sm:text-4xl lg:text-[2.75rem];
+  }
+
+  .heading-section {
+    @apply font-display text-2xl font-bold leading-snug text-navy sm:text-3xl;
+  }
+
+  .heading-sub {
+    @apply font-display text-xl font-semibold text-navy sm:text-2xl;
+  }
+
+  .alert {
+    @apply rounded-2xl border px-4 py-4 text-[18px] leading-[1.75] sm:px-5;
+  }
+
+  .alert-warning {
+    @apply alert border-warning/30 bg-[#FFF8EF] text-ink;
+  }
+
+  .alert-info {
+    @apply alert border-navy/10 bg-mist text-ink;
+  }
+
+  .alert-success {
+    @apply alert border-success/25 bg-[#F1F8F5] text-ink;
+  }
+
+  .visual-pack {
+    background:
+      radial-gradient(circle at 20% 20%, rgba(200, 169, 107, 0.18), transparent 42%),
+      radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.08), transparent 35%),
+      linear-gradient(160deg, #0b1f33 0%, #071522 55%, #0d2740 100%);
+  }
+
+  .visual-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
