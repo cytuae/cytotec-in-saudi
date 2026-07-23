@@ -1,5 +1,6 @@
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CTASection } from "@/components/CTASection";
+import { DoctorAvatar } from "@/components/DoctorAvatar";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { JsonLd } from "@/components/JsonLd";
 import { LeadForm } from "@/components/LeadForm";
@@ -86,12 +87,7 @@ export default function DoctorPage() {
           </div>
 
           <aside className="card-surface p-6 text-center">
-            <div
-              className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-navy text-2xl font-bold text-gold"
-              aria-hidden="true"
-            >
-              {DOCTOR.initials}
-            </div>
+            <DoctorAvatar size="lg" className="mx-auto" />
             <p className="mt-4 text-lg font-bold text-navy">{DOCTOR.name}</p>
             <p className="mt-1 text-sm text-ink/70">{DOCTOR.title}</p>
             <p className="mt-2 text-sm text-ink/70">{DOCTOR.education}</p>

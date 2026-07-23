@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { DOCTOR } from "@/lib/site";
+import { DoctorAvatar } from "./DoctorAvatar";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 type DoctorCardProps = {
@@ -10,12 +11,7 @@ export function DoctorCard({ compact = false }: DoctorCardProps) {
   return (
     <aside className="card-surface overflow-hidden p-5 sm:p-6">
       <div className="flex items-start gap-4">
-        <div
-          className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-navy text-lg font-bold text-gold"
-          aria-hidden="true"
-        >
-          {DOCTOR.initials}
-        </div>
+        <DoctorAvatar size="md" />
         <div className="min-w-0">
           <p className="text-lg font-bold text-navy">{DOCTOR.name}</p>
           <p className="mt-1 text-[18px] leading-[1.6] text-ink/70">{DOCTOR.title}</p>
