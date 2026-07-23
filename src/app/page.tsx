@@ -174,7 +174,7 @@ export default function HomePage() {
               {homeContent.citiesNote}
             </p>
           </div>
-          <ul className="mt-8 grid gap-3 sm:grid-cols-3">
+          <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {homeContent.cityPages.map((city) => (
               <li key={city.href}>
                 <Link
