@@ -43,16 +43,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  alternates: {
-    types: {
-      "application/rss+xml": [
-        {
-          url: "/feed.xml",
-          title: "سايتوتك في السعودية RSS",
-        },
-      ],
-    },
-  },
 };
 
 export default function RootLayout({
@@ -67,7 +57,7 @@ export default function RootLayout({
           rel="alternate"
           type="application/rss+xml"
           title="سايتوتك في السعودية RSS"
-          href="/feed.xml"
+          href="https://cytotec-in-saudi.com/feed.xml"
         />
       </head>
       <body className="min-h-screen bg-warm font-sans antialiased">

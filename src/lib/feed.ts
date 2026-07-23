@@ -1,4 +1,4 @@
-import { DATE_PUBLISHED, LAST_CONTENT_UPDATE, SITE_URL } from "@/lib/site";
+import { SITE_URL } from "@/lib/site";
 
 export type FeedItem = {
   title: string;
@@ -7,6 +7,15 @@ export type FeedItem = {
   /** ISO date YYYY-MM-DD — stable until content is republished */
   pubDate: string;
 };
+
+/** Initial core content publish date (stable). */
+const PUB_CORE = "2026-07-22";
+/** City pages batch publish date (stable). */
+const PUB_CITIES = "2026-07-23";
+/** Supporting pages first published with the initial site (stable). */
+const PUB_SUPPORT = "2026-07-22";
+/** Last actual feed publication / rebuild (stable; update only when feed is republished). */
+const FEED_LAST_BUILD = "2026-07-23";
 
 /**
  * Stable content catalog for RSS.
@@ -19,133 +28,133 @@ export const FEED_ITEMS: FeedItem[] = [
     path: "/",
     description:
       "نقطة انطلاق لفهم مصطلحات سايتوتك والميزوبروستول وحبوب تنزيل الحمل، مع توجيه نحو الصفحة الأنسب لكل نية بحث.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CORE,
   },
   {
     title: "شراء سايتوتك في السعودية",
     path: "/buy-cytotec-saudi",
     description:
       "إطار عملي لأسئلة التحقق من المادة والعبوة والمصدر قبل أي تعامل، دون اختلاق أسعار أو مخزون.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CORE,
   },
   {
     title: "حبوب الإجهاض في السعودية",
     path: "/abortion-pills-saudi",
     description:
       "توضيح المصطلحات والفروق العامة حول حبوب الإجهاض، مع حدود المعلومات العامة ومتى يلزم تقييم أوسع.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CORE,
   },
   {
     title: "حبوب تنزيل الحمل في السعودية",
     path: "/pregnancy-pills-saudi",
     description:
       "تفكيك المرادفات الشائعة لحبوب تنزيل الحمل وتمييز المقاصد المتداخلة قبل أي استنتاج من البحث وحده.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CORE,
   },
   {
     title: "سعر سايتوتك في السعودية",
     path: "/cytotec-price-saudi",
     description:
       "قراءة عوامل اختلاف السعر والتوفر دون رقم مختلق، مع التركيز على سياق العبوة والمصدر.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CORE,
   },
   {
     title: "ميزوبروستول في السعودية",
     path: "/misoprostol-saudi",
     description:
       "تثبيت المادة الفعالة والفرق عن الأسماء التجارية والأخطاء الإملائية الشائعة في نتائج البحث.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CORE,
   },
   {
     title: "سايتوتك الأصلي والتحقق",
     path: "/original-cytotec",
     description:
       "منهج تحقق من بيانات العبوة ورقم التشغيلة وحدود الصور، دون شهادة أصالة عن بُعد.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CORE,
   },
   {
     title: "هل سايتوتك متوفر في السعودية؟",
     path: "/availability",
     description:
       "التفريق بين التسجيل الدوائي والتوفر الفعلي والصرف، دون ادعاء مخزون يومي.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CORE,
   },
   {
     title: "سايتوتك في الرياض",
     path: "/cytotec-riyadh",
     description:
       "زاوية الرياض: ضغط القرار، الفرق بين الاسم والمادة، والتحقق قبل مشاركة بيانات حساسة.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CITIES,
   },
   {
     title: "سايتوتك في جدة",
     path: "/cytotec-jeddah",
     description:
       "زاوية جدة: فرز الإعلانات المتضاربة عن المعلومة الطبية وتقييم المصدر قبل التواصل.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CITIES,
   },
   {
     title: "سايتوتك في الدمام",
     path: "/cytotec-dammam",
     description:
       "زاوية الدمام: مخاطر الإعلان المجهول ومنهج التحقق دون ادعاء فرع محلي.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CITIES,
   },
   {
     title: "سايتوتك في مكة",
     path: "/cytotec-makkah",
     description:
       "زاوية مكة: التعامل مع النتائج المتضاربة والتحقق قبل القرار ضمن استشارة عن بُعد.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CITIES,
   },
   {
     title: "سايتوتك في المدينة المنورة",
     path: "/cytotec-madinah",
     description:
       "زاوية المدينة المنورة: تمييز النتائج المحلية عن الأجنبية وتجهيز الأسئلة قبل القرار.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CITIES,
   },
   {
     title: "سايتوتك في الخبر",
     path: "/cytotec-khobar",
     description:
       "زاوية الخبر: تقييم إعلانات المنتديات والتحقق من الادعاءات قبل أي تواصل.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CITIES,
   },
   {
     title: "سايتوتك في القصيم",
     path: "/cytotec-qassim",
     description:
       "زاوية القصيم لبريدة وعنيزة: فهم تغطية المنطقة وتقييم العروض المجهولة دون ادعاء فرع.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_CITIES,
   },
   {
     title: "الاستشارة الأولية المجانية والسرية",
     path: "/dr-ohood-tawfik",
     description:
       "مسار استشارة أولية عن بُعد لترتيب أسئلة سايتوتك والمصطلحات المرتبطة ضمن حدود واضحة.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_SUPPORT,
   },
   {
     title: "الأسئلة الشائعة",
     path: "/faq",
     description:
       "إجابات مختصرة عن أكثر الأسئلة تكرارًا حول المصطلحات والمسارات المعلوماتية في الموقع.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_SUPPORT,
   },
   {
     title: "عن الموقع",
     path: "/about",
     description:
       "تعريف بمنهجية الموقع في تقديم معلومات عامة مرتبة وحدود الادعاء دون اختلاق توفر أو أسعار.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_SUPPORT,
   },
   {
     title: "سياسة التحرير",
     path: "/editorial-policy",
     description:
       "قواعد المصادر وحدود الادعاء وتحديث التواريخ ومنع اختلاق الشهادات أو الأسعار.",
-    pubDate: DATE_PUBLISHED,
+    pubDate: PUB_SUPPORT,
   },
 ];
 
@@ -156,7 +165,7 @@ export const FEED_CHANNEL = {
   description:
     "موجز صفحات المعلومات عن سايتوتك والميزوبروستول والمصطلحات المرتبطة في السعودية. خريطة الموقع: https://cytotec-in-saudi.com/sitemap.xml",
   selfUrl: `${SITE_URL}/feed.xml`,
-  lastBuildDate: LAST_CONTENT_UPDATE,
+  lastBuildDate: FEED_LAST_BUILD,
 } as const;
 
 export function toRfc822Date(isoDate: string): string {

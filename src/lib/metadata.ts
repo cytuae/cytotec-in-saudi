@@ -31,14 +31,6 @@ export function buildMetadata({
     keywords: keywords.length ? keywords : undefined,
     alternates: {
       canonical: url,
-      types: {
-        "application/rss+xml": [
-          {
-            url: absoluteUrl("/feed.xml"),
-            title: "سايتوتك في السعودية RSS",
-          },
-        ],
-      },
     },
     openGraph: {
       title: fullTitle,
