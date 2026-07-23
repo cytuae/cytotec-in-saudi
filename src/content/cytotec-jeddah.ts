@@ -115,6 +115,8 @@ export const cytotecJeddahContent: MoneyPageContent = {
           ["المدينة المنورة", "تمييز المعلومة المحلية عن النتائج الأجنبية", "/cytotec-madinah"],
           ["الخبر", "التحقق من إعلانات المنتديات قبل التواصل", "/cytotec-khobar"],
           ["القصيم", "بريدة وعنيزة قبل الاستشارة", "/cytotec-qassim"],
+          ["الطائف", "تمييز المعلومة الموثوقة عن الإعلان قبل الاستشارة", "/cytotec-taif"],
+
         ],
       },
       subsections: [
@@ -186,6 +188,7 @@ export const cytotecJeddahContent: MoneyPageContent = {
           ["المدينة المنورة", "تمييز المعلومة المحلية عن النتائج الأجنبية", "/cytotec-madinah"],
           ["الخبر", "التحقق من إعلانات المنتديات قبل التواصل", "/cytotec-khobar"],
           ["القصيم", "بريدة وعنيزة قبل الاستشارة", "/cytotec-qassim"],
+          ["الطائف", "تمييز المعلومة الموثوقة عن الإعلان قبل الاستشارة", "/cytotec-taif"],
         ],
       },
     },
@@ -263,6 +266,11 @@ export const cytotecJeddahContent: MoneyPageContent = {
       href: "/cytotec-riyadh",
       title: "صفحة الرياض لضغط القرار",
       description: "تجهيز الأسئلة قبل التواصل.",
+    },
+    {
+      href: "/cytotec-taif",
+      title: "زاوية الطائف",
+      description: "تمييز المعلومة الموثوقة عن الإعلان قبل الاستشارة.",
     },
     {
       href: "/cytotec-dammam",

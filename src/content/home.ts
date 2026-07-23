@@ -136,9 +136,13 @@ export const homeContent = {
       href: "/cytotec-qassim",
       anchor: "بريدة وعنيزة قبل الاستشارة السرية",
     },
+    {
+      name: "الطائف",
+      href: "/cytotec-taif",
+      anchor: "تمييز المعلومة الموثوقة عن الإعلان قبل الاستشارة",
+    },
   ],
   cities: [
-    "الطائف",
     "تبوك",
     "حائل",
     "أبها",

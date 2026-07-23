@@ -14,6 +14,8 @@ const PUB_CORE = "2026-07-22";
 const PUB_CITIES = "2026-07-23";
 /** Supporting pages first published with the initial site (stable). */
 const PUB_SUPPORT = "2026-07-22";
+/** Taif city page real publish date (stable). */
+const PUB_TAIF = "2026-07-23";
 /** Last actual feed publication / rebuild (stable; update only when feed is republished). */
 const FEED_LAST_BUILD = "2026-07-23";
 
@@ -127,6 +129,13 @@ export const FEED_ITEMS: FeedItem[] = [
     description:
       "زاوية القصيم لبريدة وعنيزة: فهم تغطية المنطقة وتقييم العروض المجهولة دون ادعاء فرع.",
     pubDate: PUB_CITIES,
+  },
+  {
+    title: "سايتوتك في الطائف",
+    path: "/cytotec-taif",
+    description:
+      "زاوية الطائف: تمييز المعلومة الموثوقة عن الإعلان التجاري قبل طلب الاستشارة.",
+    pubDate: PUB_TAIF,
   },
   {
     title: "الاستشارة الأولية المجانية والسرية",

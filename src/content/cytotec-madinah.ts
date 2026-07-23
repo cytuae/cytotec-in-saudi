@@ -169,6 +169,7 @@ export const cytotecMadinahContent: MoneyPageContent = {
           ["مكة", "التحقق قبل القرار والاستشارة", "/cytotec-makkah"],
           ["الخبر", "التحقق من إعلانات المنتديات قبل التواصل", "/cytotec-khobar"],
           ["القصيم", "بريدة وعنيزة قبل الاستشارة", "/cytotec-qassim"],
+          ["الطائف", "تمييز المعلومة الموثوقة عن الإعلان قبل الاستشارة", "/cytotec-taif"],
         ],
       },
     },

@@ -160,6 +160,7 @@ export const cytotecMakkahContent: MoneyPageContent = {
           ["المدينة المنورة", "تمييز المعلومة المحلية عن النتائج الأجنبية", "/cytotec-madinah"],
           ["الخبر", "التحقق من إعلانات المنتديات قبل التواصل", "/cytotec-khobar"],
           ["القصيم", "بريدة وعنيزة قبل الاستشارة", "/cytotec-qassim"],
+          ["الطائف", "تمييز المعلومة الموثوقة عن الإعلان قبل الاستشارة", "/cytotec-taif"],
         ],
       },
     },
@@ -242,6 +243,11 @@ export const cytotecMakkahContent: MoneyPageContent = {
       href: "/cytotec-jeddah",
       title: "زاوية جدة القريبة",
       description: "تضارب الإعلانات وفرز المصدر في جدة.",
+    },
+    {
+      href: "/cytotec-taif",
+      title: "زاوية الطائف",
+      description: "تمييز المعلومة الموثوقة عن الإعلان قبل الاستشارة.",
     },
     {
       href: "/cytotec-madinah",

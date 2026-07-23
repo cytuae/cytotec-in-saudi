@@ -25,6 +25,7 @@ const CITY_BY_PATH: Record<string, string> = {
   "/cytotec-madinah": "madinah",
   "/cytotec-khobar": "khobar",
   "/cytotec-qassim": "qassim",
+  "/cytotec-taif": "taif",
 };
 
 const WHATSAPP_HOST_RE = /(?:^|\.)(?:wa\.me|api\.whatsapp\.com)$/i;

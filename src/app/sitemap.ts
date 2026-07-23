@@ -17,6 +17,7 @@ const routes = [
   "/cytotec-madinah",
   "/cytotec-khobar",
   "/cytotec-qassim",
+  "/cytotec-taif",
   "/dr-ohood-tawfik",
   "/faq",
   "/about",
