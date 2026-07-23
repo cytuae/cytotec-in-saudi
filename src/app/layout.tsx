@@ -43,6 +43,16 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    types: {
+      "application/rss+xml": [
+        {
+          url: "/feed.xml",
+          title: "سايتوتك في السعودية RSS",
+        },
+      ],
+    },
+  },
 };
 
 export default function RootLayout({
