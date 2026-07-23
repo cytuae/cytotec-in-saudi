@@ -174,7 +174,20 @@ export default function HomePage() {
               {homeContent.citiesNote}
             </p>
           </div>
-          <ul className="mt-8 flex flex-wrap gap-2.5">
+          <ul className="mt-8 grid gap-3 sm:grid-cols-3">
+            {homeContent.cityPages.map((city) => (
+              <li key={city.href}>
+                <Link
+                  href={city.href}
+                  className="block rounded-2xl border border-white/15 bg-white/5 px-4 py-4 text-[18px] leading-snug text-warm/90 transition hover:border-gold/40 hover:bg-white/10"
+                >
+                  <span className="block text-sm font-semibold text-gold">{city.name}</span>
+                  <span className="mt-2 block">{city.anchor}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <ul className="mt-6 flex flex-wrap gap-2.5">
             {homeContent.cities.map((city) => (
               <li
                 key={city}

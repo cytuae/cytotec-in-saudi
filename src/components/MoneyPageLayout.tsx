@@ -81,7 +81,7 @@ export function MoneyPageLayout({
       title: "تواصل معنا",
       description: "نموذج مختصر ثم متابعة عبر واتساب.",
     },
-  ].slice(0, 3);
+  ].slice(0, 11);
 
   return (
     <>
@@ -95,16 +95,17 @@ export function MoneyPageLayout({
           <TableOfContents items={content.toc} />
         </div>
 
+        <div className="mt-8">
+          <DoctorCta content={content} />
+        </div>
+
         <div className="mt-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_300px]">
           <div className="min-w-0 space-y-14">
             <ContentSections sections={firstSections} />
-
-            <DoctorCta content={content} />
-            <DoctorCard />
-
             <ContentSections sections={middleSections} />
 
             <DoctorCta content={content} />
+            <DoctorCard />
 
             <ContentSections sections={lastSections} />
             {children}
