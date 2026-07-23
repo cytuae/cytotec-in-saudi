@@ -62,6 +62,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl" className={ibmPlexArabic.variable}>
+      <head>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="سايتوتك في السعودية RSS"
+          href="/feed.xml"
+        />
+      </head>
       <body className="min-h-screen bg-warm font-sans antialiased">
         <GoogleAnalytics />
         <WhatsAppClickTracker />
