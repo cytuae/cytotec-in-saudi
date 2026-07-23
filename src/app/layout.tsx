@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_Arabic } from "next/font/google";
 import { Footer } from "@/components/Footer";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { StickyMobileCTA } from "@/components/StickyMobileCTA";
+import { WhatsAppClickTracker } from "@/components/WhatsAppClickTracker";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
@@ -51,6 +53,8 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl" className={ibmPlexArabic.variable}>
       <body className="min-h-screen bg-warm font-sans antialiased">
+        <GoogleAnalytics />
+        <WhatsAppClickTracker />
         <JsonLd data={[websiteSchema(), organizationSchema()]} />
         <Header />
         <main id="main-content">{children}</main>

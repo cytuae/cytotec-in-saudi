@@ -48,6 +48,7 @@ export function Header() {
             <WhatsAppButton
               label="استشارة مجانية"
               message={DOCTOR_WHATSAPP_MESSAGE}
+              ctaLocation="header"
               className="hidden min-h-10 px-4 text-sm sm:inline-flex"
             />
             <button

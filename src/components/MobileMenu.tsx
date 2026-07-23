@@ -62,6 +62,7 @@ export function MobileMenu({ open, onClose, items }: MobileMenuProps) {
         <WhatsAppButton
           label="استشارة مجانية"
           message={DOCTOR_WHATSAPP_MESSAGE}
+          ctaLocation="header"
           className="mt-5 w-full"
         />
       </div>

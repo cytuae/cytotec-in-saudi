@@ -132,7 +132,7 @@ export default function HomePage() {
               </p>
             ))}
             <div className="mt-6 flex flex-wrap gap-3">
-              <WhatsAppButton label="تحدثي مع الدكتورة الآن" />
+              <WhatsAppButton label="تحدثي مع الدكتورة الآن" ctaLocation="content" />
               <Link href={DOCTOR.href} className="btn-secondary">
                 تعرفي على الدكتورة
               </Link>
@@ -198,7 +198,7 @@ export default function HomePage() {
             ))}
           </ul>
           <div className="mt-10">
-            <WhatsAppButton label="ابدئي استشارتك من أي مدينة" />
+            <WhatsAppButton label="ابدئي استشارتك من أي مدينة" ctaLocation="content" />
           </div>
         </div>
       </section>

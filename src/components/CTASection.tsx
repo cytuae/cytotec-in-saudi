@@ -19,7 +19,7 @@ export function CTASection({
         <h2 className="mt-4 text-2xl font-bold leading-snug sm:text-3xl">{title}</h2>
         <p className="mt-4 text-[18px] leading-[1.75] text-warm/80">{description}</p>
         <div className="mt-6">
-          <WhatsAppButton label={buttonLabel} />
+          <WhatsAppButton label={buttonLabel} ctaLocation="content" />
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { sanitizeWhatsAppUrl, trackWhatsAppClick } from "@/lib/analytics";
 import { DOCTOR, getWhatsAppUrl } from "@/lib/site";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
@@ -31,12 +32,24 @@ export function LeadForm() {
     ].filter(Boolean);
 
     const url = getWhatsAppUrl(lines.join("\n"));
+
+    // Track without sending form fields or message body to GA.
+    trackWhatsAppClick({
+      linkUrl: sanitizeWhatsAppUrl(url),
+      linkText: "متابعة عبر واتساب",
+      ctaLocation: "lead_form",
+    });
+
     window.open(url, "_blank", "noopener,noreferrer");
     setSubmitted(true);
   }
 
   return (
-    <form onSubmit={handleSubmit} className="card-surface space-y-4 p-5 sm:p-6">
+    <form
+      onSubmit={handleSubmit}
+      className="card-surface space-y-4 p-5 sm:p-6"
+      data-cta-location="lead_form"
+    >
       <div>
         <h2 className="heading-sub text-xl">اطلبي استشارتك المجانية</h2>
         <p className="mt-2 text-[18px] leading-[1.75] text-ink/70">
@@ -91,7 +104,7 @@ export function LeadForm() {
         </select>
       </div>
 
-      <button type="submit" className="btn-gold w-full">
+      <button type="submit" className="btn-gold w-full" data-cta-location="lead_form">
         <WhatsAppIcon className="h-[1.15rem] w-[1.15rem] shrink-0" />
         <span>متابعة عبر واتساب</span>
       </button>

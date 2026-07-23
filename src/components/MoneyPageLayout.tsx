@@ -125,7 +125,11 @@ export function MoneyPageLayout({
             <div className="card-surface p-5">
               <p className="text-[18px] font-semibold text-navy">{DOCTOR.shortName}</p>
               <p className="mt-2 text-[18px] leading-[1.7] text-ink/70">{DOCTOR.consultation}</p>
-              <WhatsAppButton label="تحدثي مع الدكتورة الآن" className="mt-4 w-full" />
+              <WhatsAppButton
+                label="تحدثي مع الدكتورة الآن"
+                ctaLocation="content"
+                className="mt-4 w-full"
+              />
               <Link href={DOCTOR.href} className="btn-secondary mt-3 w-full">
                 تعرفي على الدكتورة
               </Link>

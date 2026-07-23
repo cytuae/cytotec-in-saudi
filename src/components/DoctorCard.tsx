@@ -30,7 +30,11 @@ export function DoctorCard({ compact = false }: DoctorCardProps) {
         </div>
       </div>
       <div className="mt-5 flex flex-wrap gap-3">
-        <WhatsAppButton label="تحدثي مع الدكتورة الآن" className="flex-1 sm:flex-none" />
+        <WhatsAppButton
+          label="تحدثي مع الدكتورة الآن"
+          ctaLocation="content"
+          className="flex-1 sm:flex-none"
+        />
         <Link href={DOCTOR.href} className="btn-secondary flex-1 sm:flex-none">
           تعرفي على الدكتورة
         </Link>

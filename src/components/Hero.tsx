@@ -47,7 +47,7 @@ export function Hero({
             {description}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <WhatsAppButton label={primaryLabel} />
+            <WhatsAppButton label={primaryLabel} ctaLocation="hero" />
             <Link
               href={secondaryHref}
               className="btn border border-white/20 bg-transparent text-warm hover:bg-white/10"

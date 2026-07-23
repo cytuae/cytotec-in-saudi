@@ -52,7 +52,11 @@ export default function ContactPage() {
               <p className="mt-2 text-sm leading-7 text-ink/70">
                 {DOCTOR.title} — {DOCTOR.experienceShort}
               </p>
-              <WhatsAppButton label="تحدثي مع الدكتورة الآن" className="mt-4 w-full" />
+              <WhatsAppButton
+                label="تحدثي مع الدكتورة الآن"
+                ctaLocation="contact_page"
+                className="mt-4 w-full"
+              />
             </div>
           </aside>
         </div>

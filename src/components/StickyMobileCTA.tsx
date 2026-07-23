@@ -13,6 +13,7 @@ export function StickyMobileCTA() {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
+        data-cta-location="sticky_mobile"
         aria-label="احصلي على حبوب سايتوتك الآن عبر واتساب"
         className="flex min-h-12 w-full items-center justify-center gap-2.5 rounded-xl bg-[#25D366] px-5 py-3 text-[15px] font-semibold text-white shadow-lift transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#25D366] sm:text-base"
       >

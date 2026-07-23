@@ -81,7 +81,7 @@ export default function DoctorPage() {
               ]}
             />
             <div className="mt-6">
-              <WhatsAppButton label="تحدثي مع الدكتورة الآن" />
+              <WhatsAppButton label="تحدثي مع الدكتورة الآن" ctaLocation="content" />
             </div>
           </div>
 
@@ -97,7 +97,11 @@ export default function DoctorPage() {
             <p className="mt-2 text-sm text-ink/70">{DOCTOR.education}</p>
             <p className="mt-2 text-sm text-ink/70">{DOCTOR.areaServedLabel}</p>
             <p className="mt-2 text-sm font-medium text-navy">{DOCTOR.consultation}</p>
-            <WhatsAppButton label="ابدئي الاستشارة الآن" className="mt-5 w-full" />
+            <WhatsAppButton
+              label="ابدئي الاستشارة الآن"
+              ctaLocation="content"
+              className="mt-5 w-full"
+            />
           </aside>
         </div>
 
